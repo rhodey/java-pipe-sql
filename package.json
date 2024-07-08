@@ -1,0 +1,15 @@
+{
+  "name": "java-pipe-sql",
+  "version": "0.0.1",
+  "description": "Postgresql database driver investigations",
+  "scripts": { "test": "tape tests.js" },
+  "dependencies": {
+    "luxon": "^3.2.1",
+    "split": "^1.0.1",
+    "change-case": "^4.1.2"
+  },
+  "devDependencies": {
+    "tape": "^4.6.0",
+    "pg": "^8.9.0"
+  }
+}

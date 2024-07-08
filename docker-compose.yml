@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  pipesql:
+    image: pipesql
+    container_name: pipesql
+    env_file: .env
+
+  postgres:
+    container_name: postgres
+    image: timescale/timescaledb-ha:pg14-latest
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+volumes:
+  postgres:

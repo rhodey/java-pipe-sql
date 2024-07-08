@@ -1,0 +1,7 @@
+.env
+.env2
+node_modules/
+*target*
+.idea/
+*.iml
+*swp
